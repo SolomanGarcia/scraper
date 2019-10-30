@@ -112,3 +112,7 @@ app.get("/saved", function (req, res) {
         res.render("saved", { saved })
     })
 })
+
+app.listen(port, function () {
+    console.log("Server listening on: http://localhost:" + port);
+})
