@@ -5,18 +5,21 @@
         </div>
     </div>
     <div class="row" class="linkRow">
-        <div class="col-md-4">
+        {{!-- <div class="col-md-4">
             <a href="/saved" class="upper-link">SAVED ARTICLES</a>
+        </div> --}}
+        <div class="col-md-4">
+            <button class="btn btn-primary btn-sm" id="saveBtn">SAVED ARTICLES</button>
         </div>
-
         <div class="col-md-4">
             <button class="btn btn-primary btn-sm" id="scrapeBtn">SCRAPE</button>
         </div>
-
-
         <div class="col-md-4">
-            <a href="https://www.nytimes.com" class="upper-link">NYTIMES.COM</a>
+            <button class="btn btn-primary btn-sm" id="clearBtn">CLEAR ALL ARTICLES</button>
         </div>
+        {{!-- <div class="col-md-4">
+            <a href="https://www.nytimes.com" class="upper-link">NYTIMES.COM</a>
+        </div> --}}
     </div>
 
     <hr class="white-underline">
@@ -74,7 +77,7 @@
                 type: "PUT",
                 data: data
             })
-
+            location.reload();
         });
     });
 </script>
