@@ -61,6 +61,31 @@ li {
     letter-spacing: 1.25rem;
 }
 
+#clearBtn {
+    text-align: center;
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: rgb(65, 161, 190);
+    color: rgb(29, 29, 27);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1.25rem;
+}
+
+#savedBtn {
+    text-align: center;
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: rgb(65, 161, 190);
+    color: rgb(29, 29, 27);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1.25rem;
+}
+
+
 #saveBtn {
     text-align: center;
     background-color: rgb(91, 197, 230);
@@ -69,11 +94,19 @@ li {
 }
 
 #saveBtn:hover {
-    color: white;
+    color: white; 
     background-color: rgb(0, 165, 216);
 }
 
+#savedBtn:hover {
+    background-color: rgb(127, 215, 241);
+}
+
 #scrapeBtn:hover {
+    background-color: rgb(127, 215, 241);
+}
+
+#clearBtn:hover {
     background-color: rgb(127, 215, 241);
 }
 
@@ -97,27 +130,34 @@ li {
     font-weight: bolder;
 }
 
+.sBtn {
+    color: rgb(29, 29, 27);
+}
+
 .upper-link {
-    color: rgb(86, 193, 226);
+    color: rgb(86, 193, 226); 
+    
     font-size: 1.5rem;   
     margin: auto;
-}
+     
+ } 
 
 .upper-link:hover {
     color: rgb(165, 234, 255);
-}
+} 
 
-.link {
+  .link {
     color: rgba(29, 29, 27, 0.5);
+    color: rgb(29, 29, 27); 
     font-size: 1.5rem;
     margin-left: 15px;
-}
+} 
 
 .link:hover {
-    color: rgb(29, 29, 27);    
-}
+    C    
+} 
 
-a:hover {
+ a:hover {
     text-decoration: none;    
     color: rgb(184, 234, 250);
 }
@@ -171,3 +211,5 @@ a:hover {
 
 .col-md-4 {
     text-align: center;
+    
+}
