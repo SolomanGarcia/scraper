@@ -23,7 +23,7 @@
     </div>
 
     <hr class="white-underline">
-    <div class="row">
+    <div class="row" id="articles">
         {{#each result}}
         {{#unless saved}}
         <div class="col-md-6">
@@ -60,9 +60,11 @@
 <script>
     $(document).ready(function () {
         
-        $(document).on("click", "#clearBtn", function(){
-    $(".article").empty();
-        location.reload();
+         
+
+$(document).on("click", "#clearBtn", function(){
+    $("#articles").empty();
+        
   })
 
         $("#scrapeBtn").on("click", function (event) {
