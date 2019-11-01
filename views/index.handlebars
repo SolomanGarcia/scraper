@@ -15,7 +15,7 @@
             <button class="btn btn-primary btn-sm" id="scrapeBtn">SCRAPE</button>
         </div>
         <div class="col-md-4">
-            <button class="btn btn-primary btn-sm" id="clearBtn">CLEAR ALL ARTICLES</button>
+            <button class="btn btn-primary btn-sm" id="clearBtn">CLEAR</button>
         </div>
         {{!-- <div class="col-md-4">
             <a href="https://www.nytimes.com" class="upper-link">NYTIMES.COM</a>
@@ -59,6 +59,12 @@
 
 <script>
     $(document).ready(function () {
+        
+        $(document).on("click", "#clearBtn", function(){
+    $(".article").empty();
+        location.reload();
+  })
+
         $("#scrapeBtn").on("click", function (event) {
             event.preventDefault();
             $.get("/newscrape", function (data) {
